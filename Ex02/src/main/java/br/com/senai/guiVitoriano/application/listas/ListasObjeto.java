@@ -51,11 +51,11 @@ public class ListasObjeto {
 		
 		INTERESSES = new ArrayList<>();
 		INTERESSES.add(new Interesses(1,"Esportes"));
-		INTERESSES.add(new Interesses(1,"Música"));
-		INTERESSES.add(new Interesses(1,"Artes Marciais"));
-		INTERESSES.add(new Interesses(1,"Viagens"));
-		INTERESSES.add(new Interesses(1,"Cinema"));
-		INTERESSES.add(new Interesses(1,"Dança"));
+		INTERESSES.add(new Interesses(2,"Música"));
+		INTERESSES.add(new Interesses(3,"Artes Marciais"));
+		INTERESSES.add(new Interesses(4,"Viagens"));
+		INTERESSES.add(new Interesses(5,"Cinema"));
+		INTERESSES.add(new Interesses(6,"Dança"));
 	}
 		
 

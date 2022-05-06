@@ -1,6 +1,6 @@
 package br.com.senai.guiVitoriano.application.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.inject.Named;
 
@@ -18,7 +18,7 @@ public class Pessoa {
 	Telefone telefoneComercial;
 	String cargo;
 	Double salario;
-	Integer interesses;
+	Integer[] interesses;
 	
 	
 	
@@ -90,10 +90,10 @@ public class Pessoa {
 	public void setSalario(Double salario) {
 		this.salario = salario;
 	}
-	public Integer getInteresses() {
+	public Integer[] getInteresses() {
 		return interesses;
 	}
-	public void setInteresses(Integer interesses) {
+	public void setInteresses(Integer[] interesses) {
 		this.interesses = interesses;
 	}
 	

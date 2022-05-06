@@ -5,16 +5,18 @@ import java.sql.Date;
 import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
 import br.com.senai.guiVitoriano.application.listas.ListasObjeto;
 import br.com.senai.guiVitoriano.application.model.Endereco;
 import br.com.senai.guiVitoriano.application.model.Estado;
+import br.com.senai.guiVitoriano.application.model.Interesses;
 import br.com.senai.guiVitoriano.application.model.Pessoa;
 import br.com.senai.guiVitoriano.application.model.Telefone;
 
 @Named("cadastro")
-@RequestScoped
+@SessionScoped
 @SuppressWarnings("serial")
 
 public class CadastroBean implements Serializable  {
@@ -42,6 +44,10 @@ private Pessoa pessoa;
 	
 	public List<Estado> getEstados(){
 		return ListasObjeto.ESTADOS;
+	}
+	
+	public List<Interesses> getInteresses() {
+		return ListasObjeto.INTERESSES;
 	}
 	
 }
